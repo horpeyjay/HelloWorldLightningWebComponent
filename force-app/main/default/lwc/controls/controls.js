@@ -11,5 +11,6 @@ export default class Controls extends LightningElement {
         const factor = event.target.dataset.factor;
         this.dispatchEvent(new CustomEvent('Multiply', {detail: factor}));
     }
+    factors = [0,2,3,4,5,6];
    
 }
