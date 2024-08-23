@@ -1,10 +1,8 @@
 public with sharing class TestingClass {
-    public static void testAccount{
-        string name = 'testing';
-        Account acc = new Account(name=name);
+    public static void testAccount (){
+        String accname;
+        accname = 'testing';
+        Account acc = new Account(name= accname);
         insert acc;
-        System.debug('Test');
-        System.debug('Test');
-        System.debug('Test');
     }
 }
